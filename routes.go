@@ -7,7 +7,6 @@ import (
 
 func (a *application) routes() *chi.Mux {
 	// middlewares
-	a.use(a.Middleware.CheckRemember)
 
 	// routes
 	a.get("/", a.Handlers.Home)
